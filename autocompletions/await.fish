@@ -4,6 +4,8 @@ function __fish_await_no_subcommand
         switch $i
             case --help --stdout --silent --fail --status --any --change --diff --exec --interval --forever --service --watch
                 return 1
+           default:
+                return 0
         end
     end
     return 0
